@@ -49,10 +49,19 @@ ScrollReveal().reveal('..home-img, .skills-container, portfolio-box .contact for
 
 /* ==================== typed ====================== */
 var typed = new Typed(".multiple-text", {
-    strings: ["Backend Developer", "Shipper"],
+    strings: ["Backend Developer", "Student"],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
     loop: true
 })
 
+// skill show button
+var skills = document.querySelectorAll('.readmore');
+skills.forEach((e) => {
+    e.addEventListener('onclick', ()=>{
+        console.log(skills)
+        e.classList.remove('text');
+        console.log("ok")
+    })
+});
